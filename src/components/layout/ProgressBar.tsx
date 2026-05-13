@@ -1,0 +1,33 @@
+// React / Library imports
+import { useState, useEffect, useCallback } from 'react';
+
+export const ProgressBar = () => {
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  const handleScroll = useCallback(() => {
+    const totalScroll = document.documentElement.scrollTop;
+    const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scroll = `${totalScroll / windowHeight}`;
+    setScrollProgress(Number(scroll));
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [handleScroll]);
+
+  return (
+    <div className="fixed top-0 left-0 w-full h-1 z-[60] bg-slate-200">
+      <div 
+        className="h-full gradient-cta transition-all duration-100 ease-out"
+        style={{ width: `${scrollProgress * 100}%` }}
+      />
+    </div>
+  );
+};
+
+
+
+
+
+
