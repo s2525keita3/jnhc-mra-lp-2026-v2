@@ -47,6 +47,17 @@ export const Lecturers = () => {
                     </div>
                   ) : (
                     <div className={`bg-gradient-to-br ${placeholderGrad} flex flex-col items-center justify-center p-8 text-white relative overflow-hidden min-h-[280px]`}>
+                      {l.bgImage && (
+                        <img
+                          src={l.bgImage}
+                          alt=""
+                          aria-hidden="true"
+                          loading="lazy"
+                          className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-luminosity"
+                          onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+                        />
+                      )}
+                      <div className={`absolute inset-0 bg-gradient-to-br ${placeholderGrad} opacity-80 pointer-events-none`} />
                       <div className="absolute -right-10 -top-10 w-48 h-48 bg-white/10 rounded-full blur-3xl pointer-events-none" />
                       <div className="absolute -left-8 -bottom-8 w-40 h-40 bg-white/5 rounded-full blur-2xl pointer-events-none" />
                       <div className="relative z-10 text-center">

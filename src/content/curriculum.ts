@@ -9,6 +9,7 @@ export const curriculumData = {
       body: "「雇われている看護師」という職業人としての在り方から、「自身で事業を創り出していく看護師」という経営者としての在り方へ。経営者として必要な在り方（マインド）や考え方を身につけ、今後自身の事業をどう創っていくのかを言語化していきます。",
       icon: "Brain",
       gradient: "from-navy-500 to-navy-700",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&q=80&auto=format&fit=crop",
       bullets: ["経営者マインドの土台づくり", "事業ビジョンの言語化", "判断軸の確立"],
     },
     {
@@ -18,6 +19,7 @@ export const curriculumData = {
       body: "初回挨拶で終わらない、継続的な関係構築。地域のケアマネジャー・医療機関との長期的なパートナーシップを築き、半年で新規10人以上が安定的に紹介される仕組みづくりを学びます。",
       icon: "Handshake",
       gradient: "from-teal-500 to-teal-700",
+      image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=900&q=80&auto=format&fit=crop",
       bullets: ["リピート営業の型", "関係性構築のフレーム", "半年で新規10人を狙う"],
     },
     {
@@ -27,6 +29,7 @@ export const curriculumData = {
       body: "電話・メール・SNS・地域勉強会など、対面に頼らない営業手法。少ない時間で広いリーチを取り、自社の専門性を地域に届けるためのコンテンツマーケティング・地域勉強会チラシ作成までを実践。",
       icon: "Laptop",
       gradient: "from-navy-500 to-teal-600",
+      image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=900&q=80&auto=format&fit=crop",
       bullets: ["デジタル営業の手順", "地域勉強会の組成", "コンテンツ作成術"],
     },
     {
@@ -36,6 +39,7 @@ export const curriculumData = {
       body: "SNS採用の基礎から、選ばれる求人票の書き方、HP・SNSからの問い合わせ動線まで。年に自社の媒体から10件以上の求人申し込みが来る状態を目指します。採用単価18万円以下の事例も共有。",
       icon: "Smartphone",
       gradient: "from-teal-500 to-navy-600",
+      image: "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=900&q=80&auto=format&fit=crop",
       bullets: ["SNS採用の基礎設計", "選ばれる求人票", "採用単価18万以下"],
     },
     {
@@ -45,6 +49,7 @@ export const curriculumData = {
       body: "処遇改善手当の実際の手当額を決める際の注意点、新設加算の取得テンプレート、サービス提供体制加算・機能強化型加算の要件整理。制度を「使われる」のではなく「使いこなす」経営判断を身につけます。",
       icon: "FileText",
       gradient: "from-navy-600 to-navy-800",
+      image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&q=80&auto=format&fit=crop",
       bullets: ["処遇改善手当の設計", "加算取得テンプレート", "制度を使いこなす"],
     },
     {
@@ -54,6 +59,7 @@ export const curriculumData = {
       body: "月次オンライン交流会で、全国の訪問看護経営者と直接議論。和歌山・足立区・名古屋・奈良・下関・岡山・東京杉並など、地域を超えた経営者ネットワークが、あなたの選択肢を広げます。",
       icon: "Users",
       gradient: "from-teal-600 to-teal-800",
+      image: "https://images.unsplash.com/photo-1543269865-cbf427effbad?w=900&q=80&auto=format&fit=crop",
       bullets: ["全国経営者と直接議論", "地域を超えた選択肢", "実践事例の共有"],
     },
   ],

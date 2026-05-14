@@ -16,6 +16,7 @@ export const lecturersData = {
       bio: "採用難の時代に常勤スタッフ50名を抱え、月間3,500件の訪問を回し続ける「組織作りの極意」。SNS総フォロワー11万人を熱狂させ、広告費ゼロで人とお金を集める「マーケティングの正解」。全国50社以上の支援先で再現性を確認した「失敗しない経営の型」をお伝えします。",
       themes: ["経営戦略", "組織マネジメント", "SNSマーケティング", "採用戦略", "多拠点展開"],
       avatarSrc: "/teacher_john.JPG",
+      bgImage: null,
     },
     {
       id: "guestA",
@@ -30,6 +31,7 @@ export const lecturersData = {
       bio: "開業時0名の状態から、1年1ヶ月で11名のスタッフを採用。SNSを起点に地域での認知を獲得し、求人広告費ゼロでの採用導線を確立。「広告費に頼らない採用」の実践知を、現場目線で共有します。",
       themes: ["SNS採用", "地域認知獲得", "求人票設計"],
       avatarSrc: null,
+      bgImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80&auto=format&fit=crop",
     },
     {
       id: "guestB",
@@ -44,6 +46,7 @@ export const lecturersData = {
       bio: "開設時0名のステーションを2年半で41名規模に成長させ、現在3拠点を展開。採用単価18万円以下を維持しながらスケールする手法を確立。多拠点展開の経営判断と、地域に根差した運営の両立をテーマに登壇。",
       themes: ["多拠点展開", "採用単価最適化", "拠点運営"],
       avatarSrc: null,
+      bgImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80&auto=format&fit=crop",
     },
     {
       id: "guestC",
@@ -58,6 +61,7 @@ export const lecturersData = {
       bio: "サービス提供体制加算・機能強化型加算など、制度を最大限活用するための要件整理と実務運用を専門に。処遇改善手当の手当額設計や新設加算の取得テンプレートまで、制度を「使いこなす」ための実践知を共有します。",
       themes: ["加算戦略", "処遇改善設計", "制度運用"],
       avatarSrc: null,
+      bgImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80&auto=format&fit=crop",
     },
   ],
 };
