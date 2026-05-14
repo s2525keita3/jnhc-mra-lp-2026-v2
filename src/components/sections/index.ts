@@ -11,3 +11,9 @@ export { Profile } from './Profile';
 export { Pricing } from './Pricing';
 export { FAQ } from './FAQ';
 export { Closing } from './Closing';
+// B variant v2 (peraichi-style)
+export { CourseIntro } from './CourseIntro';
+export { Curriculum } from './Curriculum';
+export { ProgramOverview } from './ProgramOverview';
+export { Lecturers } from './Lecturers';
+export { Application } from './Application';

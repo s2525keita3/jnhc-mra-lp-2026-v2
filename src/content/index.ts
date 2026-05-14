@@ -9,3 +9,8 @@ export { missionData } from './mission';
 export { testimonialData } from './testimonial';
 export { roadmapData } from './roadmap';
 export { levelsData } from './levels';
+// B variant v2 (peraichi-style)
+export { courseIntroData } from './courseIntro';
+export { curriculumData } from './curriculum';
+export { programOverviewData } from './programOverview';
+export { lecturersData } from './lecturers';

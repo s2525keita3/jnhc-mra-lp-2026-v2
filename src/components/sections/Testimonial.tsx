@@ -1,66 +1,62 @@
-import { TrendingUp } from 'lucide-react';
+import { User } from 'lucide-react';
 import { testimonialData } from '@/content';
 
 export const Testimonial = () => {
   const { items } = testimonialData;
 
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-14">
-          <span className="inline-block text-teal-700 font-bold tracking-widest text-xs uppercase bg-teal-50 px-3 py-1 rounded-full border border-teal-200 mb-6">
-            会員・ゲスト登壇者の実績
+    <section id="testimonial" className="py-20 md:py-24 bg-white">
+      <div className="max-w-5xl mx-auto px-4">
+        <div className="text-center mb-12">
+          <span className="inline-block text-teal-700 font-bold tracking-widest text-xs uppercase bg-teal-50 px-3 py-1 rounded-full border border-teal-200 mb-4">
+            VOICE
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-text-primary mt-4">数字が、証明している</h2>
-          <p className="text-text-tertiary mt-3 text-sm">交流会・ウェビナーから生まれた実際の変化</p>
+          <h2 className="text-2xl md:text-4xl font-bold text-text-primary mt-3">受講者の声</h2>
+          <p className="text-text-tertiary mt-4 text-sm md:text-base">交流会・ウェビナーから生まれた実際の変化</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="space-y-6">
           {items.map((item) => (
-            <div key={item.id} className="bg-white rounded-2xl border border-gray-100 shadow-card flex flex-col overflow-hidden hover-lift">
-              {/* Top color bar */}
-              <div className="h-1.5 gradient-cta" />
-
-              <div className="p-6 flex flex-col flex-1">
-                {/* Result numbers */}
-                <div className="flex gap-3 mb-5">
-                  <div className="flex-1 text-center bg-gray-50 rounded-xl p-3 border border-gray-100">
-                    <p className="text-gray-400 text-xs mb-1">before</p>
-                    <p className="text-sm font-bold text-gray-600 leading-snug">{item.result.before}</p>
+            <div key={item.id} className="bg-white rounded-2xl border border-navy-100 shadow-card overflow-hidden hover-lift">
+              <div className="grid md:grid-cols-[200px_1fr] gap-0">
+                {/* Avatar block */}
+                <div className="bg-navy-50 flex flex-col items-center justify-center p-6 text-center">
+                  <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-white border-4 border-teal-100 flex items-center justify-center mb-3 shadow-sm">
+                    <User className="w-12 h-12 text-teal-300" strokeWidth={1.5} />
                   </div>
-                  <div className="flex items-center text-teal-400 font-bold text-lg">→</div>
-                  <div className="flex-1 text-center bg-teal-50 rounded-xl p-3 border border-teal-200">
-                    <p className="text-teal-600 text-xs mb-1 font-bold">after</p>
-                    <p className="text-sm font-bold text-teal-700 leading-snug">{item.result.after}</p>
+                  <p className="font-bold text-navy-500 text-sm">{item.name}</p>
+                  <p className="text-text-tertiary text-[10px] mt-1 leading-snug">{item.role}</p>
+                </div>
+
+                {/* Content */}
+                <div className="p-6 md:p-7">
+                  {/* Result row */}
+                  <div className="flex items-center gap-3 mb-4 flex-wrap">
+                    <div className="bg-gray-50 border border-gray-200 rounded-full px-3 py-1">
+                      <span className="text-[10px] text-gray-500 mr-1">before</span>
+                      <span className="text-xs font-bold text-gray-600">{item.result.before}</span>
+                    </div>
+                    <span className="text-teal-400 font-bold">→</span>
+                    <div className="bg-teal-50 border border-teal-200 rounded-full px-3 py-1">
+                      <span className="text-[10px] text-teal-600 mr-1 font-bold">after</span>
+                      <span className="text-xs font-bold text-teal-700">{item.result.after}</span>
+                    </div>
+                    <span className="text-[10px] text-navy-500 bg-navy-50 border border-navy-100 rounded-full px-2 py-1 font-bold">
+                      {item.result.detail}
+                    </span>
                   </div>
-                </div>
-                <div className="bg-navy-50 rounded-lg px-3 py-2 mb-5 text-center border border-navy-100">
-                  <span className="text-navy-600 text-xs font-bold">{item.result.detail}</span>
-                </div>
 
-                {/* Quote */}
-                <div className="relative flex-1">
-                  <span className="text-5xl text-teal-100 font-serif leading-none absolute -top-2 -left-1 select-none">"</span>
-                  <blockquote className="text-text-secondary text-sm leading-relaxed pl-4 pt-3">
-                    {item.quote}
-                  </blockquote>
-                </div>
-
-                {/* Attribution */}
-                <div className="mt-5 pt-4 border-t border-gray-100">
-                  <p className="text-navy-500 font-bold text-sm">{item.name}</p>
-                  <p className="text-text-tertiary text-xs mt-0.5">{item.role}</p>
+                  {/* Quote */}
+                  <div className="relative">
+                    <span className="text-5xl text-teal-100 font-serif leading-none absolute -top-3 -left-1 select-none">"</span>
+                    <blockquote className="text-text-secondary text-sm md:text-base leading-relaxed pl-5">
+                      {item.quote}
+                    </blockquote>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-10 text-center">
-          <div className="inline-flex items-center gap-2 bg-navy-50 rounded-full px-5 py-2 border border-navy-100">
-            <TrendingUp className="w-4 h-4 text-teal-500" />
-            <span className="text-text-secondary text-sm">和歌山・足立区・名古屋・奈良・下関・岡山・東京杉並など全国から参加</span>
-          </div>
         </div>
       </div>
     </section>
