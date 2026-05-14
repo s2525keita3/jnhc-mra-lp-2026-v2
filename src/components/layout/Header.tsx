@@ -32,7 +32,7 @@ export const Header = () => {
           href={STRIPE_CHECKOUT_URL}
           target="_blank"
           rel="noreferrer noopener"
-          className="md:hidden bg-baum-500 text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-baum-600 transition"
+          className="md:hidden bg-teal-500 text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-teal-600 transition"
         >
           申し込み
         </a>
